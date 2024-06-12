@@ -1,0 +1,155 @@
+#userName {
+    border: none;
+    outline: none;
+    padding: 8px;
+}
+
+#password {
+    border: none;
+    outline: none;
+    padding: 8px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.custom-shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.custom-border {
+    border-bottom: 1px solid #ccc;
+}
+
+.custom-border-click {
+    animation-name: borderWidth;
+    animation-duration: 1s;
+}
+
+.drawer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #263544;
+}
+
+.custom-table {
+    height: calc(100vh - 60px);
+    width: calc(100% - 250px);
+}
+
+.height-0 {
+    height: 0 !important;
+}
+
+.text-orange {
+    color: #fd7e14;
+}
+
+.height-animation {
+    flex-wrap: wrap;
+    animation-name: heightAnimation;
+    animation-duration: 1s;
+}
+
+.custom-table-setting {
+    height: 70vh !important;
+    overflow: auto;
+    white-space: nowrap;
+}
+.custom-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form-container {
+    width: 500px;
+    height: 80vh;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.tr-hover:hover {
+    background-color: #eee;
+}
+
+/* .no-scrollbar::-webkit-scrollbar {
+    display: none !important;
+
+} */
+@media screen and (max-width:575.98px) {
+    .btn-w{
+        width: 200px !important;
+    }
+}
+
+@keyframes heightAnimation {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: auto;
+    }
+}
+
+@keyframes borderWidth {
+    0% {
+        border-width: 0;
+        border-color: #00ACED;
+    }
+
+    100% {
+        border-width: 100%;
+        border-color: #00ACED;
+    }
+}
+.sidebar-drawer{
+    width: 250px;
+}
+.navbar-brand-width{
+    width: 250px;
+}
+.table-width-a{
+    width: calc(100% - 250px);
+
+}
+.sidebar-width{
+    width:250px;
+}
+.table-width{
+    width :calc(100% - 250px);
+}
+@media screen and (max-width: 767px) {
+    .sidebar-width{
+        width: 0;
+        overflow: hidden;
+    }
+    .table-width{
+        width: 100%;
+    }
+  }
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
